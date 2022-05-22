@@ -107,8 +107,8 @@ Pre-requisites:  Client ID and Secret ID should be registered with Auth server b
 
 Below is the Nginx configuration block for Nexus. before routing to Nexus we are calling Lua script which initiates the communication with Auth server.
 
-
-      server {
+```
+server {
 
     resolver 127.0.0.11;
     
@@ -145,14 +145,15 @@ Below is the Nginx configuration block for Nexus. before routing to Nexus we are
     }
  
 }
-
+```
 
 **Lua script : **
 
 Authentication variables to be set : We need to configure the Client ID and Secret ID in lua script as variables. 
 Below is the block of lua script where Auth server details are configured.
 
-*local opts = {
+```
+local opts = {
 
     -- Redirect uri which doesn't exist and cannot be '/'
     
@@ -185,5 +186,5 @@ Below is the block of lua script where Auth server details are configured.
     --access_token_expires_in = 3600,
     
     --force_reauthorize = false
-}*
-
+}
+```
