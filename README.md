@@ -150,7 +150,10 @@ server {
 }
 ```
 
-**Lua script : **
+
+
+**Lua script**
+
 
 Authentication variables to be set : We need to configure the Client ID and Secret ID in lua script as variables. 
 Below is the block of lua script where Auth server details are configured.
