@@ -110,7 +110,7 @@ Pre-requisites:  Client ID and Secret ID should be registered with Auth server b
 
 Below is the Nginx configuration block for Nexus. before routing to Nexus we are calling Lua script which initiates the communication with Auth server.
 
-```
+```nginx
 server {
 
     resolver 127.0.0.11;
