@@ -41,7 +41,8 @@ For configuring Open Resty Server (NGINX as RP) we need the following additional
 
 Below are the steps involved to get openresty and its other dependency components installed. Below commands based on alpine linux.
 
-*echo "Installing required packages for OpenResty"
+```bash
+echo "Installing required packages for OpenResty"
 
 apk --update add --virtual .build_deps build-base zlib-dev pcre-dev libressl-dev make openssl-dev gnupg libxslt-dev perl-dev
 
@@ -77,6 +78,8 @@ opm install cdbattags/lua-resty-jwt
 opm install pintsized/lua-resty-http
 
 opm install zmartzone/lua-resty-openidc
+
+```
 
 **What?** - lua-resty-openidc is a library for NGINX implementing the OpenID Connect Relying Party (RP) and the OAuth 2.0 Resource Server (RS) functionality. 
  
